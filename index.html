@@ -6,10 +6,10 @@
     <title>Quest Serengeti Safari's</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header / Navbar -->
@@ -50,7 +50,7 @@
                         <option value="esp">ESP</option>
                     </select>
                     <!-- Free Quote Button -->
-                    <a href="#" class="btn btn-primary">FREE QUOTE</a>
+                    <a href="#quote-section" class="btn btn-primary free-quote-btn">FREE QUOTE</a>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
                 <div class="carousel-caption d-md-block text-start">
                     <h2>Serengeti Adventure Safari</h2>
                     <p>Experience the breathtaking wildlife and landscapes of Serengeti National Park.</p>
-                    <a href="#" class="btn btn-light">READ MORE</a>
+                    <a href="#quote-section" class="btn btn-light plan-safari-nav-btn">READ MORE</a>
                 </div>
             </div>
             <!-- Slide 2 -->
@@ -74,7 +74,7 @@
                 <div class="carousel-caption d-md-block text-start">
                     <h2>Ngorongoro Crater Tour</h2>
                     <p>Discover the iconic crater and its incredible wildlife diversity.</p>
-                    <a href="#" class="btn btn-light">READ MORE</a>
+                    <a href="#quote-section" class="btn btn-light plan-safari-nav-btn">READ MORE</a>
                 </div>
             </div>
             <!-- Slide 3 -->
@@ -83,7 +83,7 @@
                 <div class="carousel-caption d-md-block text-start">
                     <h2>Lake Manyara Day Trip</h2>
                     <p>Explore flamingos, tree-climbing lions, and scenic landscapes.</p>
-                    <a href="#" class="btn btn-light">READ MORE</a>
+                    <a href="#quote-section" class="btn btn-light plan-safari-nav-btn">READ MORE</a>
                 </div>
             </div>
         </div>
@@ -98,7 +98,210 @@
         </button>
     </div>
 
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <p class="intro-text">
+                With years of experience and strong expertise, we focus on delivering the best possible experience while always prioritizing your needs.
+            </p>
+
+            <h2>Why Choose Our Services</h2>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="icon">💳</div>
+                    <h3>Great Value Deals</h3>
+                    <p>
+                        We put in extra work to ensure our clients get full value of the price paid
+                        & the best deals through their stay.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">🗺️</div>
+                    <h3>100% Safari Customization</h3>
+                    <p>
+                        Tell us about your trip requirement & we'll work together to tailor your trip
+                        to meet your exact requirements.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">🎧</div>
+                    <h3>Constant Support</h3>
+                    <p>
+                        We provide assistance and information from planning phases of your tour
+                        throughout your stay in the country.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">💰</div>
+                    <h3>Flexible Payment Options</h3>
+                    <p>
+                        We accept credit cards, bank transfer & cash, with favorable cancellation
+                        policies for both parties.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">👤</div>
+                    <h3>Recommended Local Operator</h3>
+                    <p>
+                        We are 100% locally owned, licensed and trusted—middle-men free.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">🌱</div>
+                    <h3>Eco & Ethical</h3>
+                    <p>
+                        We follow standards & codes of conduct, respecting environment,
+                        community and staff.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REQUEST A FREE QUOTE SECTION -->
+    <section id="quote-section" class="quote-section">
+        <div class="container">
+            <div class="quote-container">
+                <div class="section-header">
+                    <h2>Ready for Your Adventure?</h2>
+                    <p class="subtitle">Get a personalized safari plan tailored just for you</p>
+                    
+                    <div class="cta-button-container">
+                        <button id="plan-safari-btn" class="plan-safari-btn">
+                            <span class="btn-icon">🦁</span>
+                            <span class="btn-text">Plan Your Safari</span>
+                            <span class="btn-subtext">Click to request a free quote</span>
+                        </button>
+                    </div>
+                </div>
+
+                <form id="quote-form" class="quote-form hidden">
+                    <div class="form-header">
+                        <h3>Custom Safari Plan Request</h3>
+                        <p class="form-subtitle">Fill in your details and we'll create your perfect safari experience</p>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="clientName">Full Name *</label>
+                            <input type="text" id="clientName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="clientEmail">Email Address *</label>
+                            <input type="email" id="clientEmail" placeholder="your.email@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="clientPhone">Phone / WhatsApp</label>
+                            <input type="tel" id="clientPhone" placeholder="+1 234 567 8900">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="clientCountry">Country *</label>
+                            <select id="clientCountry" required>
+                                <option value="" disabled selected>Select your country</option>
+                                <option value="us">United States</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="ca">Canada</option>
+                                <option value="au">Australia</option>
+                                <option value="de">Germany</option>
+                                <option value="fr">France</option>
+                                <option value="za">South Africa</option>
+                                <option value="ke">Kenya</option>
+                                <option value="tz">Tanzania</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="travelDate">Preferred Travel Date</label>
+                            <input type="date" id="travelDate">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tripLength">Trip Duration (Days)</label>
+                            <select id="tripLength">
+                                <option value="" selected>Select duration</option>
+                                <option value="3-5">3-5 days</option>
+                                <option value="6-8">6-8 days</option>
+                                <option value="9-12">9-12 days</option>
+                                <option value="13+">13+ days</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group small">
+                            <label for="adultCount">Adults *</label>
+                            <select id="adultCount" required>
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6+">6+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group small">
+                            <label for="childCount">Children</label>
+                            <select id="childCount">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4+">4+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiryType">Subject</label>
+                            <select id="inquiryType">
+                                <option value="" selected>Select inquiry type</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="safari">Safari Package</option>
+                                <option value="accommodation">Accommodation</option>
+                                <option value="transport">Transport</option>
+                                <option value="custom">Custom Package</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tripDetails">Trip Details *</label>
+                        <textarea id="tripDetails" placeholder="Tell us about your trip preferences: preferred parks, activities, budget range, special requirements, etc." required></textarea>
+                    </div>
+
+                    <div class="form-footer">
+                        <button type="submit" class="submit-btn">
+                            <span class="submit-icon">✈️</span>
+                            Get My Free Safari Plan
+                        </button>
+                        <p class="form-note">We'll respond within 24 hours with a personalized safari itinerary</p>
+                    </div>
+                    
+                    <button type="button" id="close-form-btn" class="close-form-btn">
+                        × Close Form
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
